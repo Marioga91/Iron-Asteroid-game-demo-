@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iron Asteroid</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/img/laser-right.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <audio id="shoot-sound" src="assets/sounds/blaster-2-81267.mp3"></audio>
+    <audio id="win-sound" src="assets/sounds/winsquare-6993.mp3"></audio>
+    <audio
+      id="lose-sound"
+      src="assets/sounds/videogame-death-sound-43894.mp3"
+    ></audio>
+    <audio id="jump-sound" src="assets/sounds/sfx_jump_07-80241.mp3"></audio>
+    <audio
+      id="enemy-collision-sound"
+      src="assets/sounds/8-bit-explosion-low-resonant-45659.mp3"
+    ></audio>
+    <audio id="background-music" loop autoplay>
+      <source
+        src="assets/sounds/A Theme For Space (8bit music)_9aKIkh4gfqs (1).mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </head>
+
+  <body>
+    <div class="game-board-container">
+      <div id="game-instructions">
+        <img
+          id="logo"
+          src="assets/img/logo_ironasteroid_pxArt_.gif"
+          alt="logo iron asteroid"
+        />
+        <button id="start-btn" class="pixelify-sans">Start Game</button>
+      </div>
+      <div id="board-container" class="hidden pixelify-sans"></div>
+    </div>
+
+    <div class="div-ext hidden">
+      <img src="assets/img/logo_iron_nasa_.gif" alt="logo iron asteroid" />
+    </div>
+
+    <img
+      class="hidden"
+      id="controls"
+      src="assets/img/ironasteroid_controls.png"
+      alt=" iron asteroid controls"
+    />
+    <script src="./src/remainingenemies.js"></script>
+    <script src="./src/plataform.js"></script>
+    <script src="./src/livescounter.js"></script>
+
+    <script src="./src/Bullet.js"></script>
+    <script src="./src/player.js"></script>
+    <script src="./src/background.js"></script>
+    <script src="./src/Enemy.js"></script>
+    <script src="./src/game.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

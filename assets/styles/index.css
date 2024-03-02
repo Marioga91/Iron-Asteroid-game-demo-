@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.game-board-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#board-container {
+  width: 900px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#logo {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  display: block;
+
+  margin: 0 auto;
+}
+
+#ironnasa {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.game-over-container {
+  width: 15vw;
+  height: 15vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.div-ext {
+  position: absolute;
+  top: calc(30% + 100px);
+  left: 0;
+  transform: translate(0, -50%);
+  margin-left: 40px;
+}
+
+.div-ext img {
+  width: 15%;
+  height: 15%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding: 30;
+}
+
+#controls {
+  padding: 30;
+  width: 15%;
+  height: 25%;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  transform: translate(0, -50%);
+  margin-right: 40px;
+
+  margin-left: 40px;
+}
