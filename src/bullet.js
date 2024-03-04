@@ -7,26 +7,26 @@ class Bullet {
       case "left":
         this.vx = -10;
         this.vy = 0;
-        this.x = player.x - player.width / 2;
-        this.y = player.y + player.height / 5;
+        this.x = player.x - player.width / 1;
+        this.y = player.y + player.height / 6;
         break;
       case "up":
         this.vy = -10;
         this.vx = 0;
-        this.x = player.x + player.width / 40;
-        this.y = player.y + player.height / 40;
+        this.x = player.x + player.width / -4;
+        this.y = player.y + player.height / -2;
         break;
       case "down":
         this.vy = 10;
         this.vx = 0;
-        this.x = player.x + player.width / 11;
+        this.x = player.x + player.width / -4;
         this.y = player.y + player.height / 1;
         break;
       default:
         this.vy = 0;
         this.vx = 10;
         this.x = player.x + player.width / 1;
-        this.y = player.y + player.height / 5;
+        this.y = player.y + player.height / 6;
     }
 
     this.direction = direction;

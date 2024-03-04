@@ -2,7 +2,7 @@ class Player {
   constructor(container, color) {
     this.container = container;
     this.height = 55;
-    this.width = 55;
+    this.width = 50;
     this.color = color;
     this.isJumping = false;
     this.isOnPlatform = false;
@@ -27,6 +27,7 @@ class Player {
     this.element = document.createElement("div");
 
     this.element.style.backgroundImage = `url(${this.imgSrc})`;
+    this.element.style.backgroundRepeat = "no-repeat";
     this.element.style.backgroundSize = "contain";
     this.element.style.backgroundPosition = "center";
     this.element.style.position = "absolute";
